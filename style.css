@@ -1,0 +1,118 @@
+:root {
+  --bg: #f5f7fa;
+  --header-bg: #2563eb;
+  --nav-bg: #1e3a8a;
+  --content-bg: #ffffff;
+  --footer-bg: #111827;
+  --text: #1f2937;
+  --radius: 8px;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --accent: #2563eb;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ==== Шапка ==== */
+.header {
+  background: var(--header-bg);
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  box-shadow: var(--shadow);
+}
+
+/* ==== Основная структура ==== */
+.container {
+  display: flex;
+  flex: 1;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* ==== Навигация ==== */
+.nav {
+  background: var(--nav-bg);
+  color: #fff;
+  padding: 20px;
+  border-radius: var(--radius);
+  min-width: 200px;
+}
+
+.nav ul {
+  list-style: none;
+}
+
+.nav li {
+  margin-bottom: 12px;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.nav a:hover {
+  opacity: 0.8;
+}
+
+/* ==== Контент ==== */
+.content {
+  flex: 1;
+  background: var(--content-bg);
+  border-radius: var(--radius);
+  padding: 20px;
+  box-shadow: var(--shadow);
+}
+
+.content h2 {
+  color: var(--accent);
+  margin-bottom: 12px;
+}
+
+.content p {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+/* ==== Подвал ==== */
+.footer {
+  background: var(--footer-bg);
+  color: #e5e7eb;
+  text-align: center;
+  padding: 14px;
+}
+
+/* ==== Мобильная адаптация ==== */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .nav {
+    min-width: auto;
+    text-align: center;
+  }
+
+  .nav li {
+    display: inline-block;
+    margin: 0 8px;
+  }
+
+  .nav ul {
+    padding: 0;
+  }
+}
