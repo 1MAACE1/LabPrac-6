@@ -1,10 +1,10 @@
 Заголовок: Лабораторная работа №6. Асинхронный JavaScript: API и хранилище.
 
 Новые элементы сразу же после перезагрузки:
-![alt text](image1.png)
+![alt text](Image1.png)
 
 Загрузка новых элементов:
-![alt text](image2.png)
+![alt text](Image2.png)
 
 1) Что делает fetch?
 
