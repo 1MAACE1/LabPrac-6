@@ -226,3 +226,146 @@ body {
   font-size: 20px;
   text-decoration: underline;
 }
+
+.theme-btn {
+  padding: 8px 12px;
+  border: none;
+  background: #2b8cff;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.dark {
+  --bg: #0f172a;
+  --header-bg: #1e293b;
+  --nav-bg: #1e293b;
+  --content-bg: #1e293b;
+  --footer-bg: #0f172a;
+  --text: #e5e7eb;
+  --accent: #60a5fa;
+}
+
+.header {
+  background: var(--header-bg);
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  box-shadow: var(--shadow);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.reviews {
+  margin: 40px 0;
+  text-align: center;
+}
+
+.reviews h2 {
+  color: var(--accent);
+  margin-bottom: 20px;
+}
+
+/* Карусель */
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.4s ease;
+}
+
+.review-item {
+  min-width: 100%;
+  background: var(--content-bg);
+  padding: 20px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.review-item p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.review-item h4 {
+  color: var(--accent);
+}
+
+/* Кнопки */
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 22px;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.prev:hover,
+.next:hover {
+  opacity: 0.8;
+}
+.reviews {
+  margin-top: 40px;
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  transition: 0.5s;
+  width: 100%;
+  overflow: hidden;
+}
+
+.review {
+  min-width: 100%;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.review-text {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.carousel-btn {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 14px 18px;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+
